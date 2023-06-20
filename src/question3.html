@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+        <title>Question 3</title>
+        <style>
+            figure {
+                display: flex;
+                padding: 1rem 0;
+                cursor: all-scroll;
+            }
+
+            img {
+                opacity: .2;
+                filter: blur(3px);
+            }
+
+            .active {
+                opacity: 1;
+                filter: blur(0);
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <h1>Numbers</h1>
+            <hr />
+            <div>
+                <label for="selectedImages">Selected images:</label>
+                <input type="number" id="selectedImages" min="0" max="5" value="3">
+            </div>
+            <figure>
+                <img src="numbers/wire_01.png" alt="wire number 1">
+                <img src="numbers/wire_02.png" alt="wire number 2">
+                <img src="numbers/wire_03.png" alt="wire number 3">
+                <img src="numbers/wire_04.png" alt="wire number 4">
+                <img src="numbers/wire_05.png" alt="wire number 5">
+            </figure>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
